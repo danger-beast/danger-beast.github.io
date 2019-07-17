@@ -127,7 +127,7 @@ label {
     border-top: 1px solid #FF6200;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 580px) {
     .heading {
         font-size: 28px;
     }
@@ -156,5 +156,11 @@ label {
 
     .btn {
         margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 875px) {
+    .card , .form {
+        width: 700px;
     }
 }
