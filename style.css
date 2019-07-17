@@ -50,6 +50,11 @@ label {
 .input-group {
     display: flex;
     justify-items: center;
+    margin: 8px 0;
+}
+
+.form-group {
+    margin: 15px 0;
 }
 
 .input-group label {
@@ -59,15 +64,14 @@ label {
 
 .card input[type=number] {
     width: 100%;
-    margin: 8px 0 25px 0;
     padding: 5px;
+    margin: 8px 0 15px 0;
     height: 30px;
     border: 1px solid black;
     font-size: 16px;
 }
 
 .card input[type=radio], .card input[type=checkbox] {
-    margin-bottom: 25px;
     width: 16px;
     height: 16px;
 }
