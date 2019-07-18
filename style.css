@@ -105,22 +105,23 @@ h1,h2,h3,h4,h5,h6 {
 
 .select img {
     width: 24px;
-    margin-right: 4px;
+    margin: 0 8px 0 6px;
 }
 
 .btn {
     cursor: pointer;
-    height: 50px;
+    height: 45px;
     width: 100%;
     color: #fff;
     font-weight: bold;
     border: none;
-    background: #FF6200;
+    border-radius: 3px;
+    background: rgb(255,116,0);
 }
 
 .btn-clear {
     background: #fff;
-    border: 1px solid #FF6200;
+    border: 1px solid rgb(255,116,0);
     color: black;
 }
 
@@ -136,19 +137,22 @@ h1,h2,h3,h4,h5,h6 {
 .selection {
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 10px 0 15px 0;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.18);
 }
 
 .select {
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
-    border-top: none;
+    padding-right: 3px;
+    border: none;
+    border-radius: 0;
     align-items: center;
 }
 
 .select:first-child {
-    border-top: 1px solid #FF6200;
+    border-bottom: 1px solid lightgray;
 }
 
 @media screen and (min-width: 795px) {
@@ -159,14 +163,6 @@ h1,h2,h3,h4,h5,h6 {
 
     .content {
         flex-direction: row;
-    }
-
-    .selection {
-        flex-direction: row;
-    }
-
-    .select {
-        border: 1px solid #FF6200;
     }
 
     .btn-group {
