@@ -51,8 +51,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-link a {
+    padding: 4px 0;
     color: #000;
     text-decoration: none;
+}
+
+.nav-link:active {
+    color: white;
+    background: rgba(255,98,0,0.8);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-link a:hover {
@@ -121,6 +128,7 @@ h1,h2,h3,h4,h5,h6 {
     border: none;
     border-radius: 3px;
     background: rgb(255,116,0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn-clear {
@@ -136,7 +144,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .btn-clear:active {
-    background: black;
+    background: #FF6200;
+    color: white;
 }
 .selection {
     display: flex;
