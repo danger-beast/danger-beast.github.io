@@ -1,81 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- bootstrap css -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
     <title>Document</title>
 </head>
+
 <body>
- <div class="sidebar">
-    <ul class="nav-list">
-        <li class="nav-link"><a class="active" href="#">Startpagina</a></li>
-        <li class="nav-link"><a href="#">Producten</a></li>
-        <li class="nav-link"><a href="#">Sparen</a></li>
-        <li class="nav-link"><a href="#">Beleggen</a></li>
-        <li class="nav-link"><a href="#">Lenen</a></li>
-        <li class="nav-link"><a href="#">Verzekeren</a></li>
-        <li class="nav-link"><a href="#">Pnesioen</a></li>
-        <li class="nav-link"><a href="#">Diensten</a></li>
-    </ul>
- </div>
 
-<div class="container">
-   <div class="heading">Aanmelden in Home'Bank</div>
-   <div class="card">
-       <form class="form" action="javascript:void(0);" novalidate>
-           <div class="sub-heading">1. Uw gegevens</div>
-           <label class="input-label">ing id</label>
-           <input type="number" id="ingInput">
-           <label class="input-label">card id</label>
-           <input type="number" id="cardInput">
-           <div class="form-group">
-               <div class="input-group">
-                    <input type="radio" name="bank-type" id="home-bank" checked>
-                    <label for="home-bank">Home'Bank</label>
-               </div>
-                <div class="input-group">
-                    <input type="radio" name="bank-type" id="business-bank">
-                    <label for="business-bank">Business'Bank</label>
-               </div>
-           </div>
-           <div class="form-group">
-               <div class="input-group">
-                    <input type="checkbox" name="bank-type" id="remember">
-                    <label for="remember">Bewaar mijn gegevens</label>
-                </div>
+    <div class="header">
+        Header
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <ul class="nav-list">
+                <li class="nav-link"><a class="active" href="#">Startpagina</a></li>
+                <li class="nav-link"><a href="#">Producten</a></li>
+                <li class="nav-link"><a href="#">Sparen</a></li>
+                <li class="nav-link"><a href="#">Beleggen</a></li>
+                <li class="nav-link"><a href="#">Lenen</a></li>
+                <li class="nav-link"><a href="#">Verzekeren</a></li>
+                <li class="nav-link"><a href="#">Pnesioen</a></li>
+                <li class="nav-link"><a href="#">Diensten</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+
+            <div class="card">
+                    <h1 class="heading">Aanmelden in Home'Bank</h1>
+                <form class="form" action="javascript:void(0);" novalidate>
+                    <h2 class="sub-heading">1. Uw gegevens</h2>
+                    <label class="input-label">ing id</label>
+                    <input type="number" id="ingInput">
+                    <label class="input-label">card id</label>
+                    <input type="number" id="cardInput">
+                    <div class="form-group">
+
+                        
+                        <label for="home-bank"><input type="radio" name="bank-type" id="home-bank" checked> Home'Bank</label>
+
+                        
+                        <label for="business-bank"><input type="radio" name="bank-type" id="business-bank"> Business'Bank</label>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            
+                            <label for="remember"><input type="checkbox" name="bank-type" id="remember">Bewaar mijn gegevens</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="sub-heading">2. Identificatie</h2>
+                    <p>U wilt u aanmelden met</p>
+                    <div class="selection">
+                        <div class="btn btn-clear select">
+                            <img src="img/cardreader.png" alt="">
+                            <span>uw ING-kaartlezer</span>
+                        </div>
+                        <div class="btn btn-clear select">
+                            <img src="img/itsme.png" alt="">
+                            <span>uw de itsme-app</span>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn">Aanmelden</button>
+                        <button class="btn btn-clear">Duidelijk</button>
+                    </div>
+
+                </form>
             </div>
-            <hr>
-           <div class="sub-heading">2. Identificatie</div>
-           <p>U wilt u aanmelden met</p>
-           <div class="selection">
-               <div class="btn btn-clear select">
-                   <img src="img/cardreader.png" alt="">  
-                    <span>uw ING-kaartlezer</span>
-               </div>
-               <div class="btn btn-clear select">
-                   <img src="img/itsme.png" alt="">
-                   <span>uw de itsme-app</span>
-               </div>
-           </div>
-           <div class="btn-group">
-                <button class="btn">Aanmelden</button>
-                <button class="btn btn-clear">Duidelijk</button>
-           </div>
-           
-       </form>
-   </div>
-</div>
+        </div>
+        <div class="sidebar">
+            <ul class="nav-list">
+                <li class="nav-link"><a class="active" href="#">Startpagina</a></li>
+                <li class="nav-link"><a href="#">Producten</a></li>
+                <li class="nav-link"><a href="#">Sparen</a></li>
+                <li class="nav-link"><a href="#">Beleggen</a></li>
+                <li class="nav-link"><a href="#">Lenen</a></li>
+                <li class="nav-link"><a href="#">Verzekeren</a></li>
+                <li class="nav-link"><a href="#">Pnesioen</a></li>
+                <li class="nav-link"><a href="#">Diensten</a></li>
+            </ul>
+        </div>
+    </div>
 
-<script src="main.js"></script>
-<!-- bootstrap js -->
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>     -->
+    <script src="main.js"></script>
+    <!-- bootstrap js -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>     -->
 </body>
+
 </html>

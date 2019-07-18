@@ -1,25 +1,35 @@
 html, body {
     margin:0;
     padding: 0;
-    font-family: Raleway, sans-serif;
+    font-family: 'Roboto', serif;
     font-style: normal;
-    display:flex;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+    font-family: 'Heebo', serif;
+    color: gray;
+    font-weight: 500;
+}
+
+.content {
+    display: flex;
     flex-direction: column;
 }
 
-.sidebar {
-
+.header {
+    height: 60px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
 }
 
 .nav-list {
-    padding: 25px 0 0 25px;
-    margin: 0;
+    padding: 0 15px;
     list-style-type: none;
 }
 
 .nav-link {
+    margin-bottom: 4px;
     cursor: pointer;
-    margin-bottom: 8px;
 }
 
 .nav-link a {
@@ -36,91 +46,48 @@ html, body {
     text-decoration: underline
 }
 
-.container {
-    margin:0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
 .heading {
-    margin-left: 25px;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 56px;
     color: #FF6200;
 }
 
-.sub-heading {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
 .card {
-    padding: 50px;
     box-shadow: 0px 15px 33px rgba(0, 0, 0, 0.2);
 }
 
-.card p {
-    font-size: 13px;
-}
-
 .form {
-    width: 100%;
+    display: flex;
     flex-direction: column;
-}
-
-label {
-    font-size: 14px;
 }
 
 .input-label {
     text-transform: uppercase;
-
 }
-.input-group {
-    display: flex;
-    justify-items: center;
-    margin: 8px 0;
-}
-
-.form-group {
-    margin: 15px 0;
-}
-
-.input-group label {
-    margin: 3px 0 0 3px;
-}
-
 
 .card input[type=number] {
-    width: 100%;
-    padding: 5px;
-    margin: 8px 0 15px 0;
     height: 30px;
     border: 1px solid black;
-    font-size: 16px;
+
 }
 
-.card input[type=radio], .card input[type=checkbox] {
-    width: 16px;
-    height: 16px;
+.card input[type=radio] {
+    vertical-align: top;
+    margin: 3px -1px 0 4px;
 }
 
-.selection {
-    margin-bottom: 25px;
+.card input[type=checkbox] {
+        vertical-align: top;
+    margin-top: 4px;
 }
 
 .select img {
     width: 24px;
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 .btn {
     cursor: pointer;
     height: 50px;
     width: 100%;
-    font-size: 18px;
-    margin: 6px 0;
     color: #fff;
     font-weight: bold;
     border: none;
@@ -142,15 +109,17 @@ label {
 .btn-clear:active {
     background: black;
 }
+.selection {
+    display: flex;
+    flex-direction: column;
+}
 
 .select {
     cursor: pointer;
     display: flex;
-    padding: 8px;
     border-top: none;
     height: 30px;
     align-items: center;
-    margin: 0;
 }
 
 .select:first-child {
@@ -159,37 +128,31 @@ label {
 
 @media screen and (min-width: 795px) {
 
-    body {
+    .content {
         flex-direction: row;
     }
-
+   
     .nav-link {
-        margin-bottom: 12px;
+
     }
 
     .sidebar {
-        margin-top: 66px;
-        padding: 20px 0 0 60px;
+
     }
 
     .container {
-        padding:25px;
+       
     }
 
     .heading {
-        margin: 15px 0;
-        font-size: 28px;
-    }
-    .form-group {
-        display: flex;
-        flex-direction: row;
+        
     }
     .input-group {
-        margin-right: 25px;
+
     }
 
     .selection {
-        display: flex;
+        
         flex-direction: row;
         justify-content: space-between;
     }
@@ -201,10 +164,6 @@ label {
     .btn-group {
         display: flex;
         justify-content: space-between;
-    }
-
-    .btn {
-        margin-right: 10px;
     }
 }
 
