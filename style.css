@@ -12,7 +12,22 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 500;
 }
 
+.sub-heading {
+    font-weight: normal;
+    color: black;
+}
+
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-group {
+    margin: 5px 0;
+}
+
+.input-group-inline {
     display: flex;
     flex-direction: column;
 }
@@ -51,6 +66,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .card {
+    padding: 20px;
     box-shadow: 0px 15px 33px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,23 +76,31 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .input-label {
+    color: gray;
     text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.input-group label {
+    margin-right: 15px;
 }
 
 .card input[type=number] {
-    height: 30px;
+    height: 25px;
+    padding-left: 10px;
     border: 1px solid black;
 
 }
 
 .card input[type=radio] {
     vertical-align: top;
-    margin: 3px -1px 0 4px;
+    margin: 3px 4px 0 4px;
 }
 
 .card input[type=checkbox] {
-        vertical-align: top;
+    vertical-align: top;
     margin-top: 4px;
+    margin-right: 7px;
 }
 
 .select img {
@@ -112,13 +136,14 @@ h1,h2,h3,h4,h5,h6 {
 .selection {
     display: flex;
     flex-direction: column;
+    margin: 10px 0;
 }
 
 .select {
+    box-sizing: border-box;
     cursor: pointer;
     display: flex;
     border-top: none;
-    height: 30px;
     align-items: center;
 }
 
@@ -128,33 +153,16 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (min-width: 795px) {
 
+    .btn {
+        margin: 0 4px;
+    }
+
     .content {
         flex-direction: row;
     }
-   
-    .nav-link {
-
-    }
-
-    .sidebar {
-
-    }
-
-    .container {
-       
-    }
-
-    .heading {
-        
-    }
-    .input-group {
-
-    }
 
     .selection {
-        
         flex-direction: row;
-        justify-content: space-between;
     }
 
     .select {
@@ -163,15 +171,14 @@ h1,h2,h3,h4,h5,h6 {
 
     .btn-group {
         display: flex;
-        justify-content: space-between;
     }
 }
 
 @media screen and (min-width: 992px) {
     .container .card {
-        width: 680px;
+        
     }
     .form {
-        width: 450px;
+        
     }
 }
