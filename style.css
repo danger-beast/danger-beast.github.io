@@ -5,6 +5,10 @@ html, body {
     font-style: normal;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
 h1,h2,h3,h4,h5,h6 {
     margin: 0px;
     font-family: 'Heebo', serif;
@@ -13,8 +17,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .sub-heading {
-    font-weight: normal;
-    color: black;
+    margin-top: 5px;
 }
 
 .content {
@@ -43,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-link {
-    margin-bottom: 4px;
+    padding: 4px 0;
     cursor: pointer;
 }
 
@@ -66,13 +69,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .card {
-    padding: 20px;
+    padding: 12px 20px 24px 20px;
     box-shadow: 0px 15px 33px rgba(0, 0, 0, 0.2);
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
 }
 
 .input-label {
@@ -137,7 +141,7 @@ h1,h2,h3,h4,h5,h6 {
 .selection {
     display: flex;
     flex-direction: column;
-    margin: 10px 0 15px 0;
+    margin: 10px 0 23px 0;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.18);
 }
 
@@ -156,6 +160,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media screen and (min-width: 795px) {
+
+    h1 {
+        font-size: 2em;
+    }
 
     .btn {
         margin: 0 4px;
